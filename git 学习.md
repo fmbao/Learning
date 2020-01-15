@@ -31,7 +31,7 @@ git  object几个类型：
 3.  从Git历史中删除一个文件
     >比如删除敏感信息（私钥，内网IP等），不需要版本控制的超大文件
     >采用`git filte=-branch --tree-filter 'rm -f password.txt' HEAD`
-   >
+   
  4.  commit之后想要撤回
-   > `git reset --soft HEAD^`
+    > `git reset --soft HEAD^`
 
