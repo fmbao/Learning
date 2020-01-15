@@ -24,16 +24,14 @@ git  object几个类型：
    >可以采用`git reflog`时光机
 
 2. 如何获得一个干净的工作空间
-
    >现在的工作空间太乱了，工作到一半，临时插需求
    >
    >可以采用`git stash push -u --include-untracked`
 
 3.  从Git历史中删除一个文件
-
-   >比如删除敏感信息（私钥，内网IP等），不需要版本控制的超大文件
+    >比如删除敏感信息（私钥，内网IP等），不需要版本控制的超大文件
+    >采用`git filte=-branch --tree-filter 'rm -f password.txt' HEAD`
    >
-   >可以采用`git filte=-branch --tree-filter 'rm -f password.txt' HEAD`
-   >
-   >
+ 4.  commit之后想要撤回
+   > `git reset --soft HEAD^`
 
